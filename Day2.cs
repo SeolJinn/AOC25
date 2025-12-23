@@ -4,7 +4,7 @@ namespace Day2;
 
 class Program
 {
-    // Day 2
+    // Day 2, Part 1
     private static bool IsDoubled(string number)
     {
         if (number.Length % 2 != 0) 
@@ -14,7 +14,7 @@ class Program
         return number[..half] == number[half..];
     }
 
-    // Day 3
+    // Day 2, Part 2
     private static bool IsRepeatingPattern(string number)
     {
         int length = number.Length;
@@ -36,7 +36,7 @@ class Program
 
     static void Main(string[] args)
     {        
-        var input = File.ReadAllText("Days2-3.txt");
+        var input = File.ReadAllText("Day2.txt");
         var ranges = input.Split(",");
 
         long sum = 0;
